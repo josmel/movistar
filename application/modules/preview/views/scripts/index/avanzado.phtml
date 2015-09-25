@@ -1,0 +1,172 @@
+
+<div class="head">
+    <img class="img-head"
+         src="<?= STATIC_URL ?>/preview/img/basico360/title.jpg">
+</div>
+<div class="spance-line"></div>
+
+
+<!------------------------------- REGISTRO MOVISTAR    ------------------------------>
+<div class="banner">
+    <div class="box2">
+        <a href="/preview/servicios/registrate">
+            <img  class="img-banner" src="<?= DINAMIC_URL ?>/movistar-mas_640x96.gif" alt="movistarMas" />
+        </a>
+    </div>
+</div>
+<div id="section">
+    <div class="spance-line-item"></div>
+</div> 
+
+<!------------------------------- REGISTRO MOVISTAR      ------------------------------>
+
+<!------------------------------- BANNERS TOP    ------------------------------>
+<div class="banner">
+    <?php foreach (array(1, 2, 3) as $i) : ?>
+        <div  class="box2">
+            <div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <?php foreach ($this->SoapBanners[$i] as $item): ?>
+                            <li>
+                                <a href="<?= $item['url'] ?>"><img class="img-banner" src="<?= DINAMIC_URL ?>banner/avanzado/<?= $item['ImgAvanzado'] ?>" alt="<?= $item['titulo'] ?>" /></a>
+                            </li>
+                        <?php endforeach; ?>       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+
+
+<!------------------------------- BANNERS TOP    ------------------------------>
+
+<!--/////////////////TOP LINK ///////////////////////////////7-->
+<div style="clear: both;"></div>
+<div id="section">
+    <div class="title-list">
+        <div class="title-item">Top Link</div>
+    </div>
+    <div class="spance-line-item"></div>
+</div>
+<?php foreach ($this->SoapLink as $item): ?>
+    <div class="box"> <a href="<?= $item['url'] ?>">  <img class="img-banner" src="<?= DINAMIC_URL ?>link/<?= $item['imagen'] ?>"></a>
+    </div>
+<?php endforeach; ?>
+<!--/////////////////TOP LINK ///////////////////////////////7-->
+
+<!------------------------------- SERVICIOS    ------------------------------>
+<div style="clear: both;"></div>
+<div id="section">
+    <div class="title-list">
+        <div class="title-item">Servicios</div>
+    </div>
+    <div class="spance-line-item"></div>
+</div>
+<div class="banner">
+    <div class="box2">
+        <a href="<?= $this->SoapMovistarBanner['url'] ?>">
+            <img class="img-banner" src="<?= DINAMIC_URL ?>banner/avanzado/<?= $this->SoapMovistarBanner['ImgAvanzado'] ?>" alt="<?= $this->SoapMovistarBanner['titulo'] ?>" /></a>
+        </a>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<!------------------------------- SERVICIOS    ------------------------------>
+
+<!------------------------------- MUSICA   ------------------------------>
+<!-- música -->
+<div id="section">
+    <div class="title-list">
+        <div class="title-item">
+            Musica
+        </div>
+        <div class="title-clic">(Dando clic en la canción ya estás comprando! Costo S/. 4.75 )</div>
+    </div>
+    <div class="spance-line-item"></div>
+    <?php foreach ($this->SoapMusica as $item): ?>
+        <div class="list">
+            <a class="list-link"
+               href="<?= $item["url"] ?>"><?= $item["titulo"] ?>
+            </a>
+        </div>
+    <?php endforeach; ?>
+</div>
+<!------------------------------- MUSICA   ------------------------------>
+<!------------------------------- JUEGOS   ------------------------------>
+<!-- tonos -->
+<div id="section">
+    <div class="title-list">
+        <div class="title-item">
+            Juegos
+        </div>
+        <div class="title-clic">(Dando clic al juego ya estás comprando! Costo S/. 5.00)</div>
+    </div>
+    <div class="spance-line-item"></div>
+    <?php foreach ($this->SoapJuego as $item): ?>
+        <div class="list">
+            <a class="list-link"
+               href="<?= $item["url"] ?>"><?= $item["nombre"] ?>
+            </a>
+        </div>
+    <?php endforeach; ?>
+</div>
+<!------------------------------- JUEGOS   ------------------------------>
+
+<div style="clear: both;"></div>
+<!------------------------------- BANNERS MIDDLE   ------------------------------>
+
+<div class="banner">
+    <?php foreach (array(4) as $i) : ?>
+        <div  class="box2">
+            <div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <?php foreach ($this->SoapBanners[$i] as $item): ?>
+                            <li>
+                                <a href="<?= $item['url'] ?>"><img class="img-banner" src="<?= DINAMIC_URL ?>banner/avanzado/<?= $item['ImgAvanzado'] ?>" alt="<?= $item['titulo'] ?>" /></a>
+                            </li>
+                        <?php endforeach; ?>       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+<!------------------------------- BANNERS MIDDLE    ------------------------------>
+<div style="clear: both;"></div>
+
+<!------------------------------- TEXT LINK    ------------------------------>
+
+<?php foreach ($this->SoapText as $item): ?>
+    <div class="center list-other box">
+        <a class="list-link2" href="<?= $item['url'] ?>">
+            <?= $item['descripcion'] ?>
+        </a>
+    </div>
+<?php endforeach; ?>
+<!------------------------------- TEXT LINK    ------------------------------>
+
+<div style="clear: both;"></div>
+<div class="banner-second-section">
+    <!------------------------------- BANNERS DOWN   ------------------------------>
+    
+    <div class="banner">
+    <?php foreach (array(5) as $i) : ?>
+        <div  class="box2">
+            <div class="flex-container">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <?php foreach ($this->SoapBanners[$i] as $item): ?>
+                            <li>
+                                <a href="<?= $item['url'] ?>"><img class="img-banner" src="<?= DINAMIC_URL ?>banner/avanzado/<?= $item['ImgAvanzado'] ?>" alt="<?= $item['titulo'] ?>" /></a>
+                            </li>
+                        <?php endforeach; ?>       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+    <!---------------------------------- BANNERS DOWN    ------------------------------>
+</div>

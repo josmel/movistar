@@ -1,0 +1,154 @@
+<script src="<?php echo STATIC_URL ?>css/mobile/css/js/AdminLTE/semanal.js" type="text/javascript"></script>
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title"><?php echo $this->tituloSemana ?></h3>
+                <div class="box-tools pull-right">
+                    <ul class="pagination pagination-sm inline">
+                        <?php if (($this->semanas[0] - 1) > 0) { ?>
+                            <li><a href="/admin/reportes/visitas/semana/<?php echo $this->semanas[0] - 1 ?>/alter/1">&laquo;</a></li>
+                        <?php } ?>
+                        <?php foreach ($this->semanas as $semanas) {
+                            ?> 
+                            <li><a href="/admin/reportes/visitas/semana/<?php echo $semanas ?>/top/<?php echo $this->semanas[4] ?>"><?php echo $semanas ?></a></li>
+                            <?php
+                        }
+                        if ($semanas != date("W")) {
+                            ?>
+                            <li><a href="/admin/reportes/visitas/semana/<?php echo $semanas + 1 ?>/alter/2">&raquo;</a></li>  
+                        <?php } ?>      
+                    </ul>
+                </div>
+            </div><!-- /.box-header -->
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <!-- AREA CHART -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">tablero General</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="table_div2" ></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div><!-- /.col (LEFT) -->
+
+    <div class="col-md-12">
+        <!-- AREA CHART -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Comparativo  de Visitas al Home - usuarios Unicos</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="barchart_material" style="height: 300px;"></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+
+        <!-- DONUT CHART -->
+        <div class="box box-danger">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Visitas Totales</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="trafico-total" style="height: 300px; position: relative;"></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+
+    </div><!-- /.col (LEFT) -->
+    <div class="col-md-12">
+        <!-- LINE CHART -->
+        <div class="box box-info">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Visitas Al Home</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="line-chart" style="height: 300px;"></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+
+        <!-- BAR CHART -->
+        <div class="box box-success">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Comparativo  de Visitas al Home - usuarios Unicos</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="bar-chart" style="height: 300px;"></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+
+    </div><!-- /.col (RIGHT) -->
+</div><!-- /.row -->
+<script type="text/javascript">
+    $(function () {
+        "use strict";
+        //BAR CHART
+        var visitaHomeDos = $.ajax({
+        url: '/json/visitaHomeDos2015' + yOSON.semana + '.json',
+        type: 'post',
+        dataType: 'json',
+        async: false
+    }).responseText;
+    visitaHomeDos = JSON.parse(visitaHomeDos);
+        var area = new Morris.Area({
+            element: 'bar-chart',
+            resize: true,
+            data: visitaHomeDos,
+            barColors: ['#00a65a', '#f56954'],
+            xkey: 'y',
+            ykeys: ['a', 'b'],
+            labels: ['Home', 'Usuarios'],
+             lineColors: ['#a0d0e0', '#3c8dbc'],
+            hideHover: 'auto'
+        });
+        // LINE CHART
+        
+          var visitaHome = $.ajax({
+        url: '/json/visitaHome2015' + yOSON.semana + '.json',
+        type: 'post',
+        dataType: 'json',
+        async: false
+    }).responseText;
+    visitaHome = JSON.parse(visitaHome);
+        var line = new Morris.Line({
+            element: 'line-chart',
+            resize: true,
+            data: visitaHome,
+            xkey: 'y',
+            ykeys: ['item1'],
+            labels: ['Total'],
+            lineColors: ['#3c8dbc'],
+            hideHover: 'auto'
+        });
+        
+      
+         var trafico = $.ajax({
+        url: '/json/traficoTotal2015' + yOSON.semana + '.json',
+        type: 'post',
+        dataType: 'json',
+        async: false
+    }).responseText;
+    trafico = JSON.parse(trafico);
+        // visitas totales
+        var line = new Morris.Line({
+            element: 'trafico-total',
+            resize: true,
+            data: trafico,
+            xkey: 'y',
+            ykeys: ['item1'],
+            labels: ['Total'],
+            lineColors: ['#3c8dbc'],
+            hideHover: 'auto'
+        });
+        
+    });
+ 
+</script>

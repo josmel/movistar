@@ -1,0 +1,87 @@
+<h3 class="admin-title">Top Link</h3>
+<?php $this->getMesseger();?>
+<div class="frm-panel">
+    <form method="POST"> 
+        <div class="row-well">
+            
+            <div class="ctn-file">
+                <button <?php if (count($this->banners) >= 4) { ?> style="display: none" <?php } ?> id="btnBanner" class="btn-admin btn-file">Agregar Top Link<span></span></button>
+                <span class="help-iblock w565">*Para agregar un Top Link, haga click en el botón "Agregar Top Link" y luego seleccione la ubicación de la imagen a subir, ordene los banner según lo requiera y luego haga clic en el botón "Guardar cambios".</span>
+            </div>
+            <h3> <?php echo $this->mensaje; ?>. Las imágenes deben tener las siguientes extensiones PNG,JPG,GIF o JPEG</h3>       
+            <div id="ctn-banner" class="row">
+                <p class="nd-banner hide">No hay banners en esta categoría</p>
+                <ul id="sortBanner"  class="sort-banner">
+                    <?php foreach ($this->banners as $banner) : ?>
+                        <li class="li-sbanner" style="height:70px">
+                            <div class="banner-img">
+                                <img src="<?php echo DINAMIC_URL . 'link/' . $banner['imagen']; ?>" width="70" height="70" />
+                            </div>
+                            <div class="banner-desc">
+                                <div class="cgroup-inline">
+                                    <div class="control-group">
+                                        <label class="control-label">Título:</label>
+                                        <div class="controls">
+                                            <input type="text" name="txtTitulo[<?php echo $banner['idlink']; ?>]" 
+                                                   value="<?php echo $banner['descripcion']; ?>"/>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Visible:</label>
+                                        <div class="controls fix">
+                                            <input type="checkbox" value="1" name="chkEstado[<?php echo $banner['idlink']; ?>]" 
+                                                   <?php echo $banner['vchestado'] == 'A' ? 'checked="checked"' : ''; ?> />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group last">
+                                    <label class="control-label">Link:</label>
+                                    <div class="controls">
+                                        <input type="text" name="txtLink[<?php echo $banner['idlink']; ?>]" 
+                                               value="<?php echo $banner['url']; ?>" />
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="txtImagen[<?php echo $banner['idlink']; ?>]" value="<?php echo $banner['imagen']; ?>" />
+                            <a class="ic-close" href="javascript:;" title="Cerrar"></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+                <div class="control">
+                    <button type="submit" class="btn-admin">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script id="tplBanner" type="text/template">
+    <li class="li-sbanner" style="height:70px">
+    <div class="banner-img">
+    <img src="{{= source}}" width="70" height="70" />
+    </div>
+    <div class="banner-desc">
+    <div class="cgroup-inline">
+    <div class="control-group">
+    <label class="control-label">Título:</label>
+    <div class="controls">
+    <input type="text" name="txtTitulo[{{= code}}]" />
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label">Visible:</label>
+    <div class="controls fix">
+    <input type="checkbox" checked="checked" value="1" name="chkEstado[{{= code}}]" />
+    </div>
+    </div>
+    </div>
+    <div class="control-group last">
+    <label class="control-label">Link:</label>
+    <div class="controls">
+    <input type="text" name="txtLink[{{= code}}]" />
+    </div>
+    </div>
+    </div>
+    <input type="hidden" name="txtImagen[{{= code}}]" value="{{= nombre}}" />
+    <a class="ic-close" href="javascript:;" title="Cerrar"></a>
+    </li>
+</script>

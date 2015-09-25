@@ -1,0 +1,10 @@
+[
+   {"id": "banner", "label": "banner", "type": "string"}
+   ,{"id": "2015-01-26", "label": "2015-01-26", "type": "number"}
+   ,{"id": "2015-01-27", "label": "2015-01-27", "type": "number"}
+   ,{"id": "2015-01-28", "label": "2015-01-28", "type": "number"}
+   ,{"id": "2015-01-29", "label": "2015-01-29", "type": "number"}
+   ,{"id": "2015-01-30", "label": "2015-01-30", "type": "number"}
+   ,{"id": "2015-01-31", "label": "2015-01-31", "type": "number"}
+   ,{"id": "2015-02-01", "label": "2015-02-01", "type": "number"}
+]

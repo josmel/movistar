@@ -1,0 +1,92 @@
+2015-02-16T11:44:47-05:00 INFO (6): ***********************************
+2015-02-16T11:44:47-05:00 INFO (6): Template: registroAdmin
+2015-02-16T11:44:47-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T11:44:47-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T11:44:47-05:00 INFO (6): ***********************************
+2015-02-16T11:44:47-05:00 INFO (6): 
+2015-02-16T11:44:50-05:00 INFO (6): ***********************************
+2015-02-16T11:44:50-05:00 INFO (6): Template: registroAdmin
+2015-02-16T11:44:50-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T11:44:50-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T11:44:50-05:00 INFO (6): ***********************************
+2015-02-16T11:44:50-05:00 INFO (6): 
+2015-02-16T11:44:52-05:00 INFO (6): ***********************************
+2015-02-16T11:44:52-05:00 INFO (6): Template: registroAdmin
+2015-02-16T11:44:52-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T11:44:52-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T11:44:52-05:00 INFO (6): ***********************************
+2015-02-16T11:44:52-05:00 INFO (6): 
+2015-02-16T11:48:08-05:00 INFO (6): ***********************************
+2015-02-16T11:48:08-05:00 INFO (6): Template: registroAdmin
+2015-02-16T11:48:08-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T11:48:08-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T11:48:08-05:00 INFO (6): ***********************************
+2015-02-16T11:48:08-05:00 INFO (6): 
+2015-02-16T11:48:13-05:00 INFO (6): ***********************************
+2015-02-16T11:48:13-05:00 INFO (6): Template: registroAdmin
+2015-02-16T11:48:13-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T11:48:13-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T11:48:13-05:00 INFO (6): ***********************************
+2015-02-16T11:48:13-05:00 INFO (6): 
+2015-02-16T12:09:30-05:00 INFO (6): ***********************************
+2015-02-16T12:09:30-05:00 INFO (6): Template: registroAdmin
+2015-02-16T12:09:30-05:00 INFO (6): Mail Data: [{"correo":"josmelnyh89@gmail.com","tipo":"matriarca"}]
+2015-02-16T12:09:30-05:00 INFO (6): Error Message: No existe configuración para este template. Verificar mailing.ini
+2015-02-16T12:09:30-05:00 INFO (6): ***********************************
+2015-02-16T12:09:30-05:00 INFO (6): 
+2015-02-17T10:23:30-05:00 INFO (6): ***********************************
+2015-02-17T10:23:30-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:23:30-05:00 INFO (6): Mail Data: [{"seccion":"LINK","cuerpo":[{"idlink":11,"descripcion":"Facebook","url":"http:\/\/facebook.com\/","vchestado":"A","imagen":"rfbjvildrhujhyk.png"},{"idlink":10,"descripcion":"Google","url":"http:\/\/google.com\/","vchestado":"A","imagen":"vpzmxdtblgqhtfo.png"},{"idlink":9,"descripcion":"Youtube","url":"http:\/\/youtube.com\/","vchestado":"A","imagen":"iyglakwuxyqkzvg.png"},{"idlink":14,"descripcion":"El Comercio","url":"http:\/\/elcomercio.pe\/","vchestado":"A","imagen":"ldmneagkqukwbwu.png"}]}]
+2015-02-17T10:23:30-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. l4sm16092615qao.24 - gsmtp
+
+2015-02-17T10:23:30-05:00 INFO (6): ***********************************
+2015-02-17T10:23:30-05:00 INFO (6): 
+2015-02-17T10:26:46-05:00 INFO (6): ***********************************
+2015-02-17T10:26:46-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:26:46-05:00 INFO (6): Mail Data: [{"seccion":"LINK","cuerpo":[{"idlink":11,"descripcion":"Facebook","url":"http:\/\/facebook.com\/","vchestado":"A","imagen":"rfbjvildrhujhyk.png"},{"idlink":10,"descripcion":"Google","url":"http:\/\/google.com\/","vchestado":"A","imagen":"vpzmxdtblgqhtfo.png"},{"idlink":9,"descripcion":"Youtube","url":"http:\/\/youtube.com\/","vchestado":"A","imagen":"iyglakwuxyqkzvg.png"},{"idlink":14,"descripcion":"El Comercio","url":"http:\/\/elcomercio.pe\/","vchestado":"A","imagen":"ldmneagkqukwbwu.png"}]}]
+2015-02-17T10:26:46-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. n77sm1655905qha.19 - gsmtp
+
+2015-02-17T10:26:46-05:00 INFO (6): ***********************************
+2015-02-17T10:26:46-05:00 INFO (6): 
+2015-02-17T10:27:27-05:00 INFO (6): ***********************************
+2015-02-17T10:27:27-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:27:27-05:00 INFO (6): Mail Data: [{"seccion":"LINK","cuerpo":[{"idlink":11,"descripcion":"Facebook","url":"http:\/\/facebook.com\/","vchestado":"A","imagen":"rfbjvildrhujhyk.png"},{"idlink":10,"descripcion":"Google","url":"http:\/\/google.com\/","vchestado":"A","imagen":"vpzmxdtblgqhtfo.png"},{"idlink":9,"descripcion":"Youtube","url":"http:\/\/youtube.com\/","vchestado":"A","imagen":"iyglakwuxyqkzvg.png"},{"idlink":14,"descripcion":"El Comercio","url":"http:\/\/elcomercio.pe\/","vchestado":"A","imagen":"ldmneagkqukwbwu.png"}]}]
+2015-02-17T10:27:27-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. b8sm16089156qae.32 - gsmtp
+
+2015-02-17T10:27:27-05:00 INFO (6): ***********************************
+2015-02-17T10:27:27-05:00 INFO (6): 
+2015-02-17T10:32:29-05:00 INFO (6): ***********************************
+2015-02-17T10:32:29-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:32:29-05:00 INFO (6): Mail Data: [{"seccion":"LINK","cuerpo":[{"idlink":11,"descripcion":"Facebook","url":"http:\/\/facebook.com\/","vchestado":"A","imagen":"rfbjvildrhujhyk.png"},{"idlink":10,"descripcion":"Google","url":"http:\/\/google.com\/","vchestado":"A","imagen":"vpzmxdtblgqhtfo.png"},{"idlink":9,"descripcion":"Youtube","url":"http:\/\/youtube.com\/","vchestado":"A","imagen":"iyglakwuxyqkzvg.png"},{"idlink":14,"descripcion":"El Comerciossss","url":"http:\/\/elcomercio.pe\/","vchestado":"A","imagen":"ldmneagkqukwbwu.png"}]}]
+2015-02-17T10:32:29-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. k197sm5992594qhc.28 - gsmtp
+
+2015-02-17T10:32:29-05:00 INFO (6): ***********************************
+2015-02-17T10:32:29-05:00 INFO (6): 
+2015-02-17T10:32:55-05:00 INFO (6): ***********************************
+2015-02-17T10:32:55-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:32:55-05:00 INFO (6): Mail Data: [{"seccion":"LINK","cuerpo":[{"idlink":11,"descripcion":"Facebook","url":"http:\/\/facebook.com\/","vchestado":"A","imagen":"rfbjvildrhujhyk.png"},{"idlink":10,"descripcion":"Google","url":"http:\/\/google.com\/","vchestado":"A","imagen":"vpzmxdtblgqhtfo.png"},{"idlink":9,"descripcion":"Youtube","url":"http:\/\/youtube.com\/","vchestado":"A","imagen":"iyglakwuxyqkzvg.png"},{"idlink":14,"descripcion":"El Comercio","url":"http:\/\/elcomercio.pe\/","vchestado":"A","imagen":"ldmneagkqukwbwu.png"}]}]
+2015-02-17T10:32:55-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. b74sm8480104qga.40 - gsmtp
+
+2015-02-17T10:32:55-05:00 INFO (6): ***********************************
+2015-02-17T10:32:55-05:00 INFO (6): 
+2015-02-17T10:33:08-05:00 INFO (6): ***********************************
+2015-02-17T10:33:08-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:33:08-05:00 INFO (6): Mail Data: [{"seccion":"TEXT","cuerpo":[{"descripcion":"Juegos,Tonos,Apps Aqui!","url":"http:\/\/msisdn.pr.clubcontento.com\/movifun_pe_blancomovistar\/?utm_campaign=movifiesta_blanco_textlink&utm_source=movistar","alt":"Juegos,Tonos,Apps Aqui!"},{"descripcion":"Un playstation4 Participa aqui!","url":"http:\/\/portales-cl.3gmotion.cl\/le\/wap.asp?sitio=3774","alt":"Un playstation4 Participa aqui!"},{"descripcion":"P\u00e1ginas Amarillas","url":"http:\/\/m.paginasamarillas.com.pe","alt":"P\u00e1ginas Amarillas"},{"descripcion":"Facebook","url":"http:\/\/m.facebook.com","alt":"Facebook"}]}]
+2015-02-17T10:33:08-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. u66sm5986168qhd.11 - gsmtp
+
+2015-02-17T10:33:08-05:00 INFO (6): ***********************************
+2015-02-17T10:33:08-05:00 INFO (6): 
+2015-02-17T10:33:35-05:00 INFO (6): ***********************************
+2015-02-17T10:33:35-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:33:35-05:00 INFO (6): Mail Data: [{"seccion":"MUSICA","cuerpo":[{"titulo":"Te Pintaron Pajaritos","url":"http:\/\/pe.movistar.genexies.net\/\/section\/preview_skipifjustonelink\/0\/9241111\/0\/6\/1\/8400\/xhtmlmp_touch\/posInTop\/1","img":"nqhbmpixkesywgx.gif"},{"titulo":"Cuatro Mentiras","url":"http:\/\/pe.movistar.genexies.net\/\/section\/preview_skipifjustonelink\/0\/10066997\/0\/6\/2\/8400\/xhtmlmp_touch\/posInTop\/2","img":"hiaoilymqjbcnxl.jpg"},{"titulo":"Abrazame","url":"http:\/\/pe.movistar.genexies.net\/\/section\/preview_skipifjustonelink\/0\/264597\/0\/6\/3\/8400\/xhtmlmp_touch\/posInTop\/3","img":"umkwjbxclnqplyk.gif"},{"titulo":"Magic","url":"http:\/\/pe.movistar.genexies.net\/\/section\/preview_skipifjustonelink\/0\/9955716\/0\/6\/4\/8400\/xhtmlmp_touch\/posInTop\/4","img":"lmhhrnghcvxgvze.gif"},{"titulo":"El Perdedor","url":"http:\/\/pe.movistar.genexies.net\/\/section\/preview_skipifjustonelink\/0\/9777052\/0\/6\/5\/8400\/xhtmlmp\/posInTop\/5","img":"tvgwounyovttxol.gif"}]}]
+2015-02-17T10:33:35-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. w105sm16046783qgw.25 - gsmtp
+
+2015-02-17T10:33:35-05:00 INFO (6): ***********************************
+2015-02-17T10:33:35-05:00 INFO (6): 
+2015-02-17T10:33:55-05:00 INFO (6): ***********************************
+2015-02-17T10:33:55-05:00 INFO (6): Template: correoAlerta
+2015-02-17T10:33:55-05:00 INFO (6): Mail Data: [{"seccion":"SERVICIO","cuerpo":[{"descripcion":"M\u00fasica","alt":"M\u00fasica","url":"http:\/\/pe.movistar.genexies.net","img":"xpbpjcobqakgqsk.jpg"},{"descripcion":"Juegos","alt":"Juegos","url":"http:\/\/mcp-latam.zed.com\/pe\/juegos\/?ma=","img":"znglapxoyrzbwrv.jpg"},{"descripcion":"Videos","alt":"Videos","url":"http:\/\/mcp-latam.zed.com\/pe\/videos\/?ma=","img":"ppczxndhmdlatlo.jpg"},{"descripcion":"Adultos","alt":"Adultos","url":"http:\/\/mcp-latam.zed.com\/pe\/adultos\/?ma=","img":"xpnxjtasklwgjiz.jpeg"},{"descripcion":"Noticias","alt":"Noticias","url":"\/portalwap\/noticias","img":"oqkxwawffibdqpp.jpeg"},{"descripcion":"Ringback Tones","alt":"Ringback Tones","url":"\/portalwap\/rbt","img":"potzqhlrzbiecco.jpg"},{"descripcion":"Redes Sociales","alt":"Redes Sociales","url":"\/portalwap\/redes-sociales","img":"pdoacxglwkszqud.jpg"},{"descripcion":"Portal 515","alt":"Portal 515","url":"\/portalwap\/portal515","img":"bzcdvldehofsdzf.jpg"}]}]
+2015-02-17T10:33:55-05:00 INFO (6): Error Message: 5.4.5 Daily sending quota exceeded. e92sm16034226qgd.39 - gsmtp
+
+2015-02-17T10:33:55-05:00 INFO (6): ***********************************
+2015-02-17T10:33:55-05:00 INFO (6): 

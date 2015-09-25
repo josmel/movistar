@@ -1,0 +1,135 @@
+<?php echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" ?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+    "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+    <card title=\"Movistar\" newcontext=\"true\">
+
+    <table columns=\"1\" align=\"left\" >
+        <tr>
+            <td>
+                <p color="red">MOVISTAR</p>
+            </td>
+        </tr>
+        <tr>
+                <td>        
+                    <a href="/preview/servicios/registrate">
+                        Registrate a Movistar Mas
+                    </a>
+                </td>
+            </tr>
+        <?php foreach (array(1, 2, 3) as $i) : ?>
+            <tr>
+                <td>
+                    <a href="<?= $this->SoapBanners[$i][0]['url'] ?>">
+                        <?= $this->SoapBanners[$i][0]['titulo'] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr>
+            <td>
+                <p>Top Link</p>
+            </td>
+        </tr>
+
+        <?php foreach ($this->SoapLink as $item): ?>
+            <tr>
+                <td>
+                    <a  href="<?= $item['url'] ?>"> 
+                        <?= $item['descripcion'] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr>
+            <td>
+                <p>Servicios</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="<?= $this->SoapMovistarBanner['url'] ?>">
+                    <?= $this->SoapMovistarBanner['titulo'] ?>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Musica (Dando clic en la canción ya estás comprando! Costo S/. 4.75 )</p>
+            </td>
+        </tr>
+
+        <?php foreach ($this->SoapMusica as $item): ?>
+            <tr>
+                <td> 
+                    <a class="text-link"
+                       href="<?= $item["url"] ?>"><?= $item["titulo"] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+
+        <tr>
+            <td>
+                <p>Juegos (Dando clic al juego ya estás comprando! Costo S/. 5.00)</p>
+            </td>
+        </tr>
+
+        <?php foreach ($this->SoapJuego as $item): ?>
+            <tr>
+                <td>
+                    <a class="text-link"
+                       href="<?= $item["url"] ?>"><?= $item["nombre"] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+
+
+        <?php foreach (array(4) as $i) : ?>
+            <tr>
+                <td>
+                    <a href="<?= $this->SoapBanners[$i][0]['url'] ?>">
+                        <?= $this->SoapBanners[$i][0]['titulo'] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+
+        <?php foreach ($this->SoapText as $item): ?>
+            <tr>
+                <td>
+            <u><a class="list-link2" href="<?= $item['url'] ?>">
+                    <?= $item['descripcion'] ?>
+                </a></u>
+            </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+
+
+
+        <?php foreach (array(5) as $i) : ?>
+            <tr>
+                <td>
+                    <a href="<?= $this->SoapBanners[$i][0]['url'] ?>">
+                        <?= $this->SoapBanners[$i][0]['titulo'] ?>
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+        <tr>
+            <td>
+                <a  href="/preview/servicios/legal">Legal</a>
+            </td>
+        </tr>
+    </table>
+
+</wml>

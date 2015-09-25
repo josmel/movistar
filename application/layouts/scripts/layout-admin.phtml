@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]> <html lang="es"> <![endif]-->
+<?php echo $this->render("admin/head.phtml"); ?>
+<?php if ($this->controller == 'reportes') { ?>
+
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="<?php echo STATIC_URL ?>css/mobile/css/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo STATIC_URL ?>css/mobile/css/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><!-- Ionicons -->
+    <link href="<?php echo STATIC_URL ?>css/mobile/css/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <script src="<?php echo STATIC_URL ?>css/mobile/css/js/jquery.min.js"></script>
+    <!-- Theme style -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link href="<?php echo STATIC_URL ?>css/mobile/css/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo STATIC_URL ?>css/mobile/css/css/morris/morris.css" rel="stylesheet" type="text/css" />
+<?php } ?>
+<body>
+    <?php echo $this->render("admin/header.phtml"); ?>
+    <div id="wrapper">
+        <aside class="sidebar">
+            <img class="side-logo" src="<?php echo STATIC_URL; ?>img/admin/logo.png" width="212" height="60" />
+            <?php echo $this->render("admin/menu.phtml"); ?>
+        </aside>
+
+        <div class="container">
+            <?php if ($this->controller !== 'reportes') { ?>
+                <?php echo $this->layout()->content; ?>
+            <?php } else { ?>
+<h3 class="admin-title">Reporte Movistar</h3>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="">
+            <section class="content">
+                 <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <p>
+                                    Banners
+                                </p>
+                            </div>
+                            <a href="/admin/reportes/banners" class="small-box-footer">
+                                Ingresar <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                            <div class="inner">
+                                <p>
+                                     Visitas
+                                </p>
+                            </div>
+
+                            <a href="/admin/reportes/visitas" class="small-box-footer">
+                                Ingresar<i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <p>
+                                      Por Click
+                                </p>
+                            </div>
+                            <a href="/admin/reportes/total" class="small-box-footer">
+                                Ingresar <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                            <div class="inner">
+                                <p>
+                                     Anual
+                                </p>
+                            </div>
+                            <a href="/admin/reportes/anual" class="small-box-footer">
+                                Ingresar <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div><!-- ./col -->
+                </div><!-- /.row -->
+                <?php echo $this->layout()->content; ?>
+                
+             </section><!-- /.content -->
+        </aside><!-- /.right-side -->
+    </div><!-- ./wrapper -->
+            <?php } ?>   
+ 
+        </div>
+
+    </div>
+    <?php echo $this->render("admin/footer.phtml"); ?>
+    <script type="text/javascript">
+        var yOSON = {
+            "modulo": "<?php echo $this->module ?>",
+            "controller": "<?php echo $this->controller ?>",
+            "action": "<?php echo $this->action ?>",
+            "baseHost": "<?php echo SITE_URL ?>",
+            "statHost": "<?php echo STATIC_URL ?>",
+            "eleHost": "<?php echo DINAMIC_URL ?>",
+            "statVers": "?<?php echo SITE_VERSION; ?>",
+<?php
+foreach ($this->yosonVars as $key => $value) :
+    echo '"' . $key . '":' . $value . ', ';
+endforeach;
+echo '"min":"","AppCore":{},"AppSandbox":{},"AppSchema":{"modules":{},"requires":{}'
+?>
+            }
+        };
+    </script>
+    <?php if ($this->controller !== 'reportes') { ?>
+        <script src="<?php echo STATIC_URL ?>js/libs/framework.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <?php } else { ?>
+        <style>
+    .admin-title{
+        height: 38px;
+    }
+    .admin-menu a{
+        height: 40px;
+    }
+    .container {
+        float: left;
+        min-height: 220px;
+        padding: 65px 0 40px 0px;
+        width: 738px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+</style>
+        <script src="<?php echo STATIC_URL ?>css/mobile/css/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<?php echo STATIC_URL ?>css/mobile/css/js/raphael-min.js"></script>
+        <script src="<?php echo STATIC_URL ?>css/mobile/css/js/plugins/morris/morris.min.js" type="text/javascript"></script>
+    <?php } ?>
+    <script src="<?php echo STATIC_URL ?>js/application/yoson.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <script src="<?php echo STATIC_URL ?>js/modules/admin.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <script src="<?php echo STATIC_URL ?>js/application/schemas/mAdmin.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <script src="<?php echo STATIC_URL ?>js/application/schemas/modules.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <script src="<?php echo STATIC_URL ?>js/application/appLoad.js?v=<?php echo SITE_VERSION; ?>"></script>
+    <script src="<?php echo STATIC_URL ?>js/dropzone.js?v=<?php echo SITE_VERSION; ?>"></script>
+    
+</body>
+</html>

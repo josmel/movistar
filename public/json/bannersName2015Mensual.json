@@ -1,0 +1,11 @@
+[
+   {"id": "banner", "label": "banner", "type": "string"}
+   ,{"id": "Enero", "label": "Enero", "type": "number"}
+   ,{"id": "Febrero", "label": "Febrero", "type": "number"}
+   ,{"id": "Marzo", "label": "Marzo", "type": "number"}
+   ,{"id": "Abril", "label": "Abril", "type": "number"}
+   ,{"id": "Mayo", "label": "Mayo", "type": "number"}
+   ,{"id": "Junio", "label": "Junio", "type": "number"}
+   ,{"id": "Julio", "label": "Julio", "type": "number"}
+   ,{"id": "Agosto", "label": "Agosto", "type": "number"}
+]

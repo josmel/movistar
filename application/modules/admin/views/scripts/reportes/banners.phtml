@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title"><?php echo $this->tituloSemana ?></h3>
+                <div class="box-tools pull-right">
+                    <ul class="pagination pagination-sm inline">
+                        <?php if (($this->semanas[0] - 1) > 0) { ?>
+                            <li><a href="/admin/reportes/banners/semana/<?php echo $this->semanas[0] - 1 ?>/alter/1">&laquo;</a></li>
+                        <?php } ?>
+                        <?php foreach ($this->semanas as $semanas) {
+                            ?> 
+                            <li><a href="/admin/reportes/banners/semana/<?php echo $semanas ?>/top/<?php echo $this->semanas[4] ?>"><?php echo $semanas ?></a></li>
+                            <?php
+                        }
+                        if ($semanas != date("W")) {
+                            ?>
+                            <li><a href="/admin/reportes/banners/semana/<?php echo $semanas + 1 ?>/alter/2">&raquo;</a></li>  
+                        <?php } ?>      
+                    </ul>
+                </div>
+            </div><!-- /.box-header -->
+        </div>
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Clicks</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="banner_clic" ></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+
+
+
+    </div><!-- /.col (LEFT) -->
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header">
+                <i class="fa fa-bar-chart-o"></i>
+                <h3 class="box-title">Impresiones</h3>
+            </div>
+            <div class="box-body chart-responsive">
+                <div class="chart" id="table_div" ></div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div><!-- /.col (RIGHT) -->
+</div><!-- /.row -->
+<br><br>
+<script src="<?php echo STATIC_URL ?>css/mobile/css/js/jquery.min.js"></script>
+<script src="<?php echo STATIC_URL ?>css/mobile/css/js/AdminLTE/banner.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
